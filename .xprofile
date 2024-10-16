@@ -1,0 +1,11 @@
+# Start rustyvibes if it's not already running
+if ! pgrep -x "rustyvibes" > /dev/null; then
+    /home/psy/.cargo/bin/rustyvibes ~/razorgreen -v 50 &> ~/rustyvibes.log &
+fi
+
+# Start redshift if it's not already running
+#if ! pgrep -x "redshift" > /dev/null; then
+#    redshift -O 4500 &> ~/redshift.log &
+#fi
+
+
